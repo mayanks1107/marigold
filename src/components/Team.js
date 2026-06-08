@@ -113,7 +113,9 @@ function MemberDetails({ member }) {
           </p>
         )}
         <br/>
-        <p>To schedule an appointment with {member.name}, please contact our team.</p>
+        {!member.role?.toLowerCase().includes('clinic coordinator') && (
+          <p>To schedule an appointment with {member.name}, please contact our team.</p>
+        )}
       </div>
     </div>
   );

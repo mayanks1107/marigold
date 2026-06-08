@@ -18,6 +18,7 @@ import rakhiPhoto from '../components/rakhi.jpg';
 import bijayaPhoto from '../components/BIJIYA.jpg';
 import victoriaPhoto from '../components/victoria.jpg';
 import newtonPhoto from '../components/newton.jpeg';
+import naazneenPhoto from '../components/naazneen.jpeg'
 
 export const founder = {
   name: 'Deso Barman',
@@ -179,7 +180,7 @@ export const teamMembers = [
   {
     name: 'Heather Subba',
     pronouns: 'She/Her',
-    role: 'Clinical Psychologist (RCI Licensed)',
+    role: 'Consultant Clinical Psychologist (RCI Licensed)',
     subtitle: 'MPhil in Clinical Psychology (NIMHANS)',
     photo: heatherPhoto,
     registration: 'RCI Registration no. A109900',
@@ -281,8 +282,10 @@ export const teamMembers = [
   },
   {
     name: 'Bijaya Thokchom',
-    role: 'Clinical Psychologist (RCI Licensed)',
-    photo: bijayaPhoto,
+    pronouns: 'She/Her',
+    role: 'Consultant Clinical Psychologist (RCI Licensed)',
+    photo: victoriaPhoto,
+    subtitle: 'M.Phil. in Clinical Psychology (RIMS)',
     bio: 'Bijaya Thokchom is a Consultant Clinical Psychologist committed to providing evidence-based, compassionate, and culturally responsive mental healthcare. She works with adolescents, young adults, and adults experiencing emotional, behavioural, and psychological difficulties, supporting them in building resilience, insight, and emotional wellbeing. Her clinical interests include anxiety and mood-related concerns, stress management, maternal mental health, emotional wellbeing, and psychological adjustment across different life stages.',
     areasTitle: 'Areas of Care & Services Offered',
     areas: [
@@ -324,8 +327,9 @@ export const teamMembers = [
   },
   {
     name: 'Victoria Lanu Aimol',
-    role: 'Clinical Psychologist (RCI Licensed)',
-    photo: victoriaPhoto,
+    role: 'Consultant Clinical Psychologist (RCI Licensed)',
+    pronouns: 'She/Her',
+    photo: bijayaPhoto,
     subtitle: 'M.Phil. in Clinical Psychology (NIEPMD)',
     bio: 'Victoria Lanu Aimol is a Consultant Clinical Psychologist committed to providing evidence-based, compassionate, and culturally responsive mental healthcare. She works with children, adolescents, adults, and families experiencing emotional, behavioural, developmental, and psychological challenges. She has a special interest in neurodevelopmental conditions, child and adolescent mental health, emotional and behavioural difficulties, parent guidance, and psychological assessment. Alongside her work with children and families, she also supports adolescents and adults experiencing anxiety, stress, emotional difficulties, adjustment concerns, and other common mental health challenges.',
     areasTitle: 'Areas of Care & Services Offered',
@@ -384,6 +388,7 @@ export const teamMembers = [
   {
     name: 'Newton Nepram',
     role: 'Consultant Clinical Psychologist (RCI Licensed)',
+    pronouns: 'He/Him',
     photo: newtonPhoto,
     subtitle: 'M.Phil. in Clinical Psychology (RIMS)',
     registration: 'RCI Registration no. A112987',
@@ -425,46 +430,46 @@ export const teamMembers = [
     languages: ['English', 'Manipuri'],
     ageGroups: 'Adults (18+ Years), Older Adults',
   },
-  // {
-  //   name: 'Naazneen',
-  //   role: 'Consultant Neuropsychologist',
-  //   fees: 'Rs. 1300',
-  //   bio: 'Naazneen is a Consultant Neuropsychologist with a strong interest in understanding the relationship between brain functioning, cognition, emotions, and everyday wellbeing. She is passionate about making neuroscience accessible through meaningful psychoeducation, helping individuals better understand how their minds work and how their unique cognitive patterns influence their experiences, relationships, and daily lives. Her work is grounded in the belief that cognitive differences are not deficits to be fixed but unique ways of experiencing and interacting with the world.',
-  //   areasTitle: 'Area of Care & Services Offered',
-  //   areas: [
-  //     'Neuro-Cognitive Rehabilitation',
-  //     'Cognitive Health & Optimization',
-  //     'Neuropsychological Assessment',
-  //     'Neurodiversity-Affirming Support',
-  //     'Cognitive Profiling & Strength-Based Assessment',
-  //     'Attention, Memory & Executive Functioning Difficulties',
-  //     'Emotional Regulation & Stress Management',
-  //     'Sensory Processing & Environmental Overload',
-  //     'Self-Understanding & Psychoeducation',
-  //     'Academic & Occupational Functioning Challenges',
-  //     'Psychological Adjustment & Life Transitions',
-  //     'Individual Neuropsychological Support',
-  //   ],
-  //   approaches: [
-  //     'Neuroplasticity-informed care',
-  //     'Neurodiversity-affirming perspective',
-  //     'Evidence-based cognitive strategies',
-  //     'Psychoeducation',
-  //     'Strengths-based interventions',
-  //     'Structured cognitive development and emotional wellbeing support',
-  //   ],
-  //   education: [
-  //     { degree: 'M.Sc. Neuropsychology', school: 'JAIN (Deemed-to-be University), Bengaluru' },
-  //     { degree: 'BA Psychology & Media Studies', school: 'Mount Carmel College, Bengaluru' },
-  //   ],
-  //   certifications: [
-  //     'Dementia & Neuropsychological Rehabilitation Workshop (2025)',
-  //     'Training in Neuropsychological Assessment and Cognitive Rehabilitation',
-  //     'Experience in Cognitive Evaluation, Psychoeducation, and Neuropsychological Support',
-  //   ],
-  //   languages: ['English', 'Hindi', 'Urdu', 'Dakhani Urdu', 'Kannada'],
-  //   ageGroups: 'Young Adults (18-35 Years)',
-  // },
+  {
+    name: 'Naazneen',
+    role: 'Consultant Neuropsychologist',
+    pronouns: 'She/Her',
+    photo: naazneenPhoto,
+    bio: 'Naazneen is a Consultant Neuropsychologist with a strong interest in understanding the relationship between brain functioning, cognition, emotions, and everyday wellbeing. She is passionate about making neuroscience accessible through meaningful psychoeducation, helping individuals better understand how their minds work and how their unique cognitive patterns influence their experiences, relationships, and daily lives. Her work is grounded in the belief that cognitive differences are not deficits to be fixed but unique ways of experiencing and interacting with the world.',
+    areasTitle: 'Area of Care & Services Offered',
+    areas: [
+      'Neuro-Cognitive Rehabilitation',
+      'Cognitive Health & Optimization',
+      'Neuropsychological Assessment',
+      'Neurodiversity-Affirming Support',
+      'Cognitive Profiling & Strength-Based Assessment',
+      'Attention, Memory & Executive Functioning Difficulties',
+      'Emotional Regulation & Stress Management',
+      'Sensory Processing & Environmental Overload',
+      'Self-Understanding & Psychoeducation',
+      'Academic & Occupational Functioning Challenges',
+      'Psychological Adjustment & Life Transitions',
+      'Individual Neuropsychological Support',
+    ],
+    approaches: [
+      "Naazneen's approach is grounded in neuroplasticity, recognizing the brain's remarkable capacity for adaptation, growth, and change.",
+      'Neurodiversity-affirming perspective that views cognitive differences as variations in human functioning rather than deficits to be corrected.',
+      'Evidence-based cognitive strategies, psychoeducation, and strengths-based interventions to help individuals understand the why behind their experiences.',
+      'Collaborative exploration of each client’s unique cognitive blueprint, transforming confusion and self-doubt into insight, self-understanding, and practical growth.',
+      'Supportive, non-judgmental, and structured focus on cognitive development, emotional wellbeing, and sustainable change.',
+    ],
+    education: [
+      { degree: 'M.Sc. Neuropsychology', school: 'JAIN (Deemed-to-be University), Bengaluru' },
+      { degree: 'BA Psychology & Media Studies', school: 'Mount Carmel College, Bengaluru' },
+    ],
+    certifications: [
+      'Dementia & Neuropsychological Rehabilitation Workshop (2025)',
+      'Training in Neuropsychological Assessment and Cognitive Rehabilitation',
+      'Experience in Cognitive Evaluation, Psychoeducation, and Neuropsychological Support',
+    ],
+    languages: ['English', 'Hindi', 'Urdu', 'Dakhani Urdu', 'Kannada'],
+    ageGroups: 'Young Adults (18-35 Years)',
+  },
   {
     name: 'Aishwarya G',
     pronouns: 'She/Her',
@@ -498,7 +503,7 @@ export const teamMembers = [
   {
     name: 'Zoha Ahmed',
     role: 'Consultant Neuropsychologist',
-    subtitle: 'M.Sc. Neuropsychology',
+    // subtitle: 'M.Sc. Neuropsychology',
     photo: zohaPhoto,
     pronouns: 'She/Her',
     // fees: 'Rs. 1300',
@@ -730,13 +735,8 @@ export const teamMembers = [
 "Master of Science (MSc.) in Skin & Cosmetic Surgery",
 "Fellowship in Aesthetic Medicine (FAM) - Institute of Laser & Aesthetic Medicine (Indo-German Board)",
 "Pre-Medical Studies in Psychology",
-"Basic Life Support (BLS) with Automated External Defibrillator (AED) Certification"
-
     ],
-    clinicalTraining: [
-      'Advanced professional certifications and training programs through leading healthcare institutions, including King Edward Memorial Hospital and initiatives supported by the Government of Maharashtra',
-    ],
-    languages: ['English', 'Manipur'],
+    languages: ['English', 'Manipuri'],
   },
   {
     name: 'Dr. Prathamesh K. Joshi',
@@ -773,7 +773,7 @@ export const teamMembers = [
   {
     name: 'Dr. Rakhi Singha',
     pronouns: 'She/Her',
-    role: 'Ayurvedic Physician',
+    role: 'Consultant Ayurvedic Physician',
     subtitle: "Women's Health Advocate",
     photo: rakhiPhoto,
     paragraphs: [
