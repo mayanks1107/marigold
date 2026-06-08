@@ -1,0 +1,209 @@
+.contact {
+  padding: var(--section-gap) 6vw;
+  background: linear-gradient(145deg, var(--peach) 0%, var(--orange-bg) 60%, var(--dusty-rose) 100%);
+  color: var(--text-on-cream);
+}
+
+.contact__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+.contact__social{
+  position: relative;
+}
+.contact-lines{
+  height:700%;
+  width: 100%;
+  position: absolute;
+  bottom: -70%;
+  left: 20%;
+}
+.contact__eyebrow {
+  font-family: var(--font-hand);
+  font-size: 2.4rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--white);
+}
+
+.contact__title {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  color: var(--white);
+  margin: 8px 0 28px;
+  line-height: 1.1;
+  text-shadow: 0 2px 12px rgba(92, 74, 61, 0.1);
+}
+
+.contact__details p { margin-bottom: 20px; font-size: 0.95rem; color: var(--text-body); }
+
+.contact__details a {
+  color: var(--orange-dark);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 600;
+}
+
+.contact__social {
+  display: flex;
+  gap: 12px;
+  margin: 24px 0;
+}
+
+.contact__social a {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--cream);
+  color: var(--orange-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.85rem;
+  box-shadow: var(--shadow-sticker);
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.contact__social a:hover {
+  transform: translateY(-3px) scale(1.08);
+}
+
+.contact__crisis {
+  font-size: 0.85rem;
+  opacity: 0.95;
+  max-width: 360px;
+  color: var(--text-body);
+  background: rgba(255, 252, 250, 0.6);
+  padding: 12px 16px;
+  border-radius: var(--radius-sm);
+}
+
+.contact__illus {
+  display: none;
+}
+
+.contact__form,
+.contact__success {
+  background: var(--cream);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  color: var(--text-body);
+  border: var(--border-cute);
+  box-shadow: var(--shadow-soft);
+  position: relative;
+}
+
+.contact__form::before {
+  content: '';
+  position: absolute;
+  top: -12px;
+  right: 28px;
+  width: 68px;
+  height: 20px;
+  background: url('../assets/decor/heart-tape.png') center/contain no-repeat;
+  transform: rotate(3deg);
+}
+
+.contact__field { margin-bottom: 16px; }
+
+.contact__field label {
+  display: block;
+  font-family: var(--font-hand);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--orange);
+  margin-bottom: 6px;
+}
+
+.contact__field input,
+.contact__field select,
+.contact__field textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 2px dashed var(--border);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  background: var(--white);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.contact__field input:focus,
+.contact__field select:focus,
+.contact__field textarea:focus {
+  outline: none;
+  border-color: var(--orange);
+  border-style: solid;
+  box-shadow: 0 0 0 3px rgba(232, 136, 104, 0.15);
+}
+
+.contact__submit {
+  width: 100%;
+  padding: 14px;
+  background: var(--orange);
+  color: var(--white);
+  font-weight: 700;
+  border-radius: 999px;
+  font-size: 1rem;
+  margin-top: 8px;
+  box-shadow: var(--shadow-sticker);
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), background 0.2s;
+}
+
+.contact__submit:hover {
+  background: var(--orange-dark);
+  transform: translateY(-2px);
+}
+
+.contact__success h3 {
+  font-family: var(--font-display);
+  color: var(--orange);
+  margin-bottom: 12px;
+}
+
+.contact__reset {
+  margin-top: 16px;
+  color: var(--orange);
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+@media (max-width: 1180px) {
+  .contact-lines {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact__inner {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .contact-lines { display: none; }
+
+  .contact__crisis {
+    max-width: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .contact__eyebrow {
+    font-size: 1.9rem;
+  }
+
+  .contact__form,
+  .contact__success {
+    padding: 22px 18px;
+  }
+
+  .contact__social a {
+    width: 44px;
+    height: 44px;
+  }
+}

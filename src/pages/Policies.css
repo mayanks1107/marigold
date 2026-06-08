@@ -1,0 +1,146 @@
+.policies-page {
+  min-height: 100vh;
+  background: var(--cream-soft);
+  background-image:
+    radial-gradient(circle at 15% 20%, rgba(255, 217, 200, 0.4) 0%, transparent 40%),
+    radial-gradient(circle at 85% 80%, rgba(212, 196, 228, 0.25) 0%, transparent 38%);
+}
+
+.policies {
+  padding: 120px 6vw var(--section-gap);
+}
+
+.policies__inner {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.policies__back {
+  display: inline-block;
+  margin-bottom: 24px;
+  font-weight: 700;
+  color: var(--orange);
+  padding: 8px 16px;
+  background: var(--orange-light);
+  border-radius: 999px;
+  transition: transform 0.2s;
+}
+
+.policies__back:hover {
+  color: var(--orange-dark);
+  transform: translateX(-4px);
+}
+
+.policies__intro {
+  margin: 16px 0 32px;
+  font-size: 1.05rem;
+  color: var(--text-body);
+  max-width: 720px;
+}
+
+.policies__toc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 48px;
+}
+
+.policies__toc a {
+  padding: 10px 16px;
+  background: var(--white);
+  color: var(--orange-dark);
+  border-radius: 999px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  border: 2px dashed var(--border);
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.2s, background 0.2s;
+}
+
+.policies__toc a:hover {
+  background: var(--orange-light);
+  transform: translateY(-2px);
+}
+
+.policies__section {
+  background: var(--cream);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  margin-bottom: 32px;
+  box-shadow: var(--shadow-soft);
+  border: var(--border-cute);
+}
+
+.policies__section-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  color: var(--text-on-cream);
+  margin-bottom: 8px;
+}
+
+.policies__section-subtitle {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+}
+
+.policies__section-body { color: var(--text-body); }
+
+.policies__lead {
+  margin-bottom: 24px;
+  font-size: 1.02rem;
+}
+
+.policies__block {
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px dashed var(--border);
+}
+
+.policies__block:first-child {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+
+.policies__block h3 {
+  font-family: var(--font-display);
+  color: var(--orange);
+  font-size: 1.15rem;
+  margin-bottom: 12px;
+}
+
+.policies__block h4 {
+  font-family: var(--font-display);
+  color: var(--text-on-cream);
+  font-size: 1rem;
+  margin: 16px 0 8px;
+}
+
+.policies__block p { margin-bottom: 12px; }
+
+.policies__block ul { margin: 8px 0 16px 20px; }
+
+.policies__block li { margin-bottom: 6px; }
+
+@media (max-width: 768px) {
+  .policies { padding-top: 100px; }
+  .policies__section { padding: 28px 20px; }
+}
+
+@media (max-width: 560px) {
+  .policies {
+    padding-top: 84px;
+  }
+
+  .policies__toc {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 10px;
+  }
+
+  .policies__toc a {
+    flex: 0 0 auto;
+    white-space: nowrap;
+  }
+}

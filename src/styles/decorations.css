@@ -1,0 +1,141 @@
+/* Shared decorative assets & scrapbook-style utilities */
+
+.decor {
+  position: absolute;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+}
+
+.decor img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* Section-level floating stickers */
+.about::before,
+.services::after,
+.reviews::after,
+.expect::before,
+.faq::after {
+  content: '';
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.72;
+}
+
+.about,
+.services,
+.reviews,
+.expect,
+.faq {
+  position: relative;
+  overflow: hidden;
+}
+
+.about__inner,
+.services__inner,
+.reviews__inner,
+.expect__inner,
+.faq__inner {
+  position: relative;
+  z-index: 1;
+}
+
+.about::before {
+  top: 2%;
+  left: -8%;
+  width: 350px;
+  height: 350px;
+  background-image: url('../assets/decor/branch-watercolor.png');
+  transform: rotate(8deg);
+}
+
+.services::after {
+  bottom: 6%;
+  left: 3%;
+  width: 200px;
+  height: 200px;
+  background-image: url('../assets/decor/blobs.png');
+  transform: rotate(40deg);
+  opacity: 0.55;
+}
+
+
+
+.expect::before {
+  top: 8%;
+  right: 3%;
+  width: 300px;
+  height: 300px;
+  background-image: url('../assets/decor/green-leaves.png');
+  transform: rotate(-8deg);
+}
+
+.faq::after {
+  bottom: 10%;
+  left: 4%;
+  width: 420px;
+  height: 440px;
+  background-image: url('../assets/decor/vintage-botanical.png');
+  transform: rotate(6deg);
+  opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+  .about::before,
+  .services::after,
+  .reviews::after,
+  .expect::before,
+  .faq::after {
+    opacity: 0.35;
+    transform: scale(0.75);
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1180px) {
+  .about::before {
+    left: -12%;
+    width: 240px;
+    height: 240px;
+    opacity: 0.34;
+  }
+
+  .services::after {
+    width: 140px;
+    height: 140px;
+    opacity: 0.24;
+  }
+
+  .expect::before {
+    top: 2%;
+    right: -8%;
+    width: 210px;
+    height: 210px;
+    opacity: 0.28;
+  }
+
+  .faq::after {
+    left: -10%;
+    width: 260px;
+    height: 280px;
+    opacity: 0.24;
+  }
+}
+
+@media (max-width: 560px) {
+  .about::before,
+  .services::after,
+  .reviews::after,
+  .expect::before,
+  .faq::after {
+    opacity: 0.22;
+    transform: scale(0.55);
+  }
+}

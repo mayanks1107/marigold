@@ -1,0 +1,89 @@
+.about {
+  padding: var(--section-gap) 6vw;
+  background: var(--cream-soft);
+}
+
+.about__inner { max-width: 1100px; margin: 0 auto; }
+
+.about__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 32px;
+}
+
+.about__text p {
+  margin-bottom: 16px;
+  color: var(--text-body);
+}
+
+.about__tagline {
+  font-family: var(--font-hand);
+  font-size: 1.55rem;
+  color: var(--orange);
+  font-weight: 600;
+  margin-top: 8px !important;
+}
+
+.about__cards { display: flex; flex-direction: column; gap: 16px; }
+
+.about__card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  border: var(--border-cute);
+  box-shadow: var(--shadow-soft);
+  position: relative;
+  transform: rotate(0.4deg);
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.about__card::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 28px;
+  width: 72px;
+  height: 22px;
+  background: url('../assets/decor/heart-tape.png') center/contain no-repeat;
+  transform: rotate(-4deg);
+  opacity: 0.9;
+}
+
+.about__card:hover {
+  transform: rotate(0deg) translateY(-4px);
+}
+
+.about__card h3 {
+  font-family: var(--font-display);
+  color: var(--orange);
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+}
+
+.about__card--orange {
+  background: linear-gradient(145deg, var(--peach), var(--orange-bg));
+  color: var(--text-body);
+  border: 3px solid var(--white);
+}
+
+@media (max-width: 768px) {
+  .about__grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .about__card {
+    transform: none;
+    padding: 22px;
+  }
+}
+.section-eyebrow{
+  font-size: 2.4rem;
+}
+
+@media (max-width: 640px) {
+  .section-eyebrow {
+    font-size: 1.8rem;
+  }
+}
