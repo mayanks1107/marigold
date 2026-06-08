@@ -238,6 +238,7 @@ export const teamMembers = [
   {
     name: 'Dr. Shenu Salestin Richa',
     pronouns: 'She/Her',
+    registration: "RCI Registration no. A58689",
     role: 'Consultant Psychologist',
     subtitle: 'PhD, MPhil in Clinical Psychology',
 
@@ -330,6 +331,7 @@ export const teamMembers = [
     role: 'Consultant Clinical Psychologist (RCI Licensed)',
     pronouns: 'She/Her',
     photo: bijayaPhoto,
+    registration: 'RCI Registration no. A119320',
     subtitle: 'M.Phil. in Clinical Psychology (NIEPMD)',
     bio: 'Victoria Lanu Aimol is a Consultant Clinical Psychologist committed to providing evidence-based, compassionate, and culturally responsive mental healthcare. She works with children, adolescents, adults, and families experiencing emotional, behavioural, developmental, and psychological challenges. She has a special interest in neurodevelopmental conditions, child and adolescent mental health, emotional and behavioural difficulties, parent guidance, and psychological assessment. Alongside her work with children and families, she also supports adolescents and adults experiencing anxiety, stress, emotional difficulties, adjustment concerns, and other common mental health challenges.',
     areasTitle: 'Areas of Care & Services Offered',
