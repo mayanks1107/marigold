@@ -134,7 +134,7 @@ function FounderCard({ member }) {
         </div>
 
         <MemberDetails member={member} />
-        <p  className="team-card__fees">{member.fees} per session</p>
+        {/* <p  className="team-card__fees">{member.fees} per session</p> */}
       </div>
       <div className="team-founder__photo">
         <div className="team-card__meta">
@@ -325,6 +325,7 @@ const teamGroups = [
       'Zoha Ahmed',
       'Naazneen',
       'Samina Ahmed',
+      'Adricia Mukhim',
     ],
   },
   {

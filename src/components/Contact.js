@@ -4,8 +4,6 @@ import lines from "../assets/decor/green-leaves.png"
 
 export default function Contact() {
   const [form, setForm] = useState({ name: '', email: '', concern: '', message: '' });
-  const [sent, setSent] = useState(false);
-
   const concerns = [
     'Psychological Consultation',
     'Therapy / Counselling',
@@ -17,11 +15,6 @@ export default function Contact() {
   ];
 
   const handleChange = (e) => setForm((f) => ({ ...f, [e.target.name]: e.target.value }));
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setSent(true);
-  };
 
   return (
     <section className="contact" id="contact">
@@ -49,23 +42,14 @@ export default function Contact() {
         <div className="contact__right">
         
           <div className="contact__illus" aria-hidden="true"></div>
-          {sent ? (
-            <div className="contact__success">
-              <h3>Thank you, {form.name || 'friend'}!</h3>
-              <p>Your message has been received. We will be in touch soon.</p>
-              <button
-                type="button"
-                className="contact__reset"
-                onClick={() => {
-                  setSent(false);
-                  setForm({ name: '', email: '', concern: '', message: '' });
-                }}
-              >
-                Send another message
-              </button>
-            </div>
-          ) : (
-            <form className="contact__form" onSubmit={handleSubmit}>
+          <form
+            className="contact__form"
+            action="https://formsubmit.co/marigoldmentalhealthclinic@gmail.com"
+            method="POST"
+          >
+              <input type="hidden" name="_subject" value="New enquiry from Marigold website" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_captcha" value="false" />
               <div className="contact__field">
                 <label htmlFor="name">Your Name</label>
                 <input type="text" id="name" name="name" value={form.name} onChange={handleChange} required />
@@ -89,7 +73,6 @@ export default function Contact() {
               </div>
               <button type="submit" className="contact__submit">Send Message</button>
             </form>
-          )}
         </div>
         
       </div>
