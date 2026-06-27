@@ -2,6 +2,15 @@
   position: relative;
 }
 
+.hero_photo {
+  width: min(36vw, 420px);
+  max-width: 100%;
+  justify-self: start;
+  align-self: center;
+  display: block;
+  /* border-radius: var(--radius-lg); */
+  /* box-shadow: var(--shadow-sticker); */
+}
 .hero__top {
   position: relative;
   display: flex;
@@ -74,8 +83,8 @@
 .hero__bottom {
   position: relative;
   display: grid;
-  grid-template-columns: 1fr minmax(200px, 340px);
-  gap: 40px;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 420px);
+  gap: 20px;
   align-items: center;
   padding: 56px 6vw 72px;
   background:
@@ -210,8 +219,13 @@
 
   .hero__bottom {
     grid-template-columns: 1fr;
-    gap: 28px;
+    gap: 10px;
     padding: 44px 6vw 56px;
+  }
+
+  .hero_photo {
+    width: min(320px, 82vw);
+    justify-self: center;
   }
 
   .hero__what-label {

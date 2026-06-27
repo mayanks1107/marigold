@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import Home from './pages/Home';
 import Policies from './pages/Policies';
+import EducationTraining from './pages/EducationTraining';
 
 function ScrollToHash() {
   const { hash, pathname } = useLocation();
@@ -27,6 +28,7 @@ export default function App() {
       <ScrollToHash />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/education-training" element={<EducationTraining />} />
         <Route path="/policies" element={<Policies />} />
       </Routes>
     </BrowserRouter>

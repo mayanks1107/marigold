@@ -1,6 +1,7 @@
 import React from 'react';
 import backImg from '../back.jpg';
 import desoPhoto from './DESO.jpeg';
+import heroPhoto from '../components/hero_pic1.png';
 import './Hero.css';
 
 export default function Hero() {
@@ -38,6 +39,8 @@ export default function Hero() {
             <a href="#services" className="hero__btn hero__btn--outline">Our Services</a>
           </div>
         </div>
+
+        <img className="hero_photo" src={heroPhoto} alt="" />
 
         
       </div>

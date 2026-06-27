@@ -301,20 +301,20 @@ const teamGroups = [
     title: 'Psychiatrists',
     names: ['Dr. Shivam Tyagi', 'Dr. Shubhankar Mondal'],
   },
-  {
-    title: 'Clinical Psychologists & Rehabilitation Counselor',
-    names: [
-       'Heather Subba',
-       'Dr. Shenu Salestin Richa',
-      'Bijaya Thokchom',
-      'Victoria Lanu Aimol',
-      'Newton Nepram',
-      'Adricia Mukhim',
-      'Pooja Basumatary',
+  // {
+  //   title: 'Clinical Psychologists & Rehabilitation Counselor',
+  //   names: [
+  //      'Heather Subba',
+  //      'Dr. Shenu Salestin Richa',
+  //     'Bijaya Thokchom',
+  //     'Victoria Lanu Aimol',
+  //     'Newton Nepram',
+  //     'Adricia Mukhim',
+  //     'Pooja Basumatary',
      
       
-    ],
-  },
+  //   ],
+  // },
   {
     title: 'Consultant Psychologists',
     names: [

@@ -7,6 +7,7 @@ const links = [
   { label: 'About', href: '/#about' },
   { label: 'Services', href: '/#services' },
   { label: 'Team', href: '/#team' },
+  { label: 'Education & Training', href: '/education-training' },
   { label: 'Reviews', href: '/#reviews' },
   { label: 'What to Expect', href: '/#expect' },
   { label: 'FAQ', href: '/#faq' },

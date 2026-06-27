@@ -113,14 +113,8 @@ export default function Services() {
   return (
     <section className="services" id="services">
       <div className="services__inner">
-        <p className="section-eyebrow">Our Services</p>
-        <h2 className="section-title">Comprehensive care</h2>
-        <p className="services__intro">
-          At Marigold Neurocognitive & Mental Health Clinic, we welcome children, adolescents, adults, older adults, students, professionals, couples, families, caregivers, women, men, LGBTQIA+ individuals, and people from diverse backgrounds, identities, and life experiences.<br/>
-Whether you are navigating emotional challenges, relationship concerns, academic pressures, life transitions, stress, burnout, or seeking greater self-understanding and wellbeing, our team is committed to providing compassionate, inclusive, and evidence-based care through secure online consultations.
-
-        </p>
-<img className = "service-flower"src = {flower}/>
+        <h2 className="section-title">Our Services</h2>
+            <img className = "service-flower"src = {flower}/>
         <div className="services__layout">
         
           <div className="services__nav">
