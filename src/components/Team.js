@@ -326,7 +326,7 @@ const teamGroups = [
       'Neaha Dkhar',
       'Zoha Ahmed',
       'Naazneen',
-      'Samina Ahmed',
+      // 'Samina Ahmed',
     ],
   },
   {
